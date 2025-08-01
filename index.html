@@ -3,10 +3,105 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JLK DARE ME S.A.C.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; color:#333; background:#f2f2f2; }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://safesitehq.com/wp-content/uploads/machine-guards-1-1536x1024.jpeg') center/cover no-repeat;
+      color:#fff; text-align:center; padding:6em 1em;
+    }
+    header h1 { font-size: 3em; margin-bottom: 0.3em; }
+    nav a {
+      color:#fff; margin:0 1em; text-decoration:none; font-weight:bold;
+      background-color: rgba(255, 255, 255, 0.1); padding: 0.5em 1em; border-radius: 5px;
+    }
+    nav a:hover { background-color: rgba(255, 255, 255, 0.3); }
+    section { padding:3em 2em; background:#fff; margin-bottom: 1em; }
+    h2 { color:#002d62; font-size: 2em; margin-bottom: 0.5em; }
+    p { max-width: 800px; margin: auto; }
+    .cards { display:flex; flex-wrap:wrap; gap:1.5em; justify-content: center; margin-top:2em; }
+    .card {
+      flex:1 1 calc(30% - 1em); background:#fff; border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1em;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width:100%; border-radius:6px; margin-bottom:1em; }
+    footer {
+      background:#002d62; color:#fff; text-align:center; padding:2em 1em;
+      font-size: 0.9em;
+    }
+    @media(max-width:768px){ .cards { flex-direction:column; } .card { flex:1 auto; } }
+  </style>
 </head>
 <body>
-  <h1>Página principal</h1>
-  <p><a href="/servicios.html">Ir a la subpágina de Servicios</a></p>
+
+  <header>
+    <h1>JLK DARE ME S.A.C.</h1>
+    <p>Soluciones industriales con calidad y compromiso</p>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#otros-servicios">Otros Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="nosotros">
+    <h2>Quiénes Somos</h2>
+    <p>JLK DARE ME S.A.C. es una empresa peruana con amplia experiencia en fabricación de estructuras metálicas, productos FRP y capacitaciones de seguridad. Nos enfocamos en soluciones duraderas, seguras y adaptadas a cada cliente.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590658412085-2723f9d351fc?auto=format&fit=crop&w=800&q=80" alt="Estructuras Metálicas">
+        <h3>Estructuras Metálicas</h3>
+        <p>Fabricación e instalación de estructuras metálicas para la industria, minería y construcción.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600267165517-c9ad97a8e9a3?auto=format&fit=crop&w=800&q=80" alt="Productos FRP">
+        <h3>Productos FRP</h3>
+        <p>Fabricamos piezas de plástico reforzado con fibra de vidrio para ambientes exigentes y corrosivos.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092334394-9cbf7c0b5f72?auto=format&fit=crop&w=800&q=80" alt="Capacitaciones">
+        <h3>Capacitaciones</h3>
+        <p>Entrenamiento especializado en trabajos de alto riesgo y prevención de accidentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes">
+    <h2>Clientes</h2>
+    <p>Hemos brindado soluciones a empresas del sector minero, constructor e industrial, ofreciendo atención personalizada, cumplimiento de plazos y calidad garantizada.</p>
+  </section>
+
+  <section id="otros-servicios">
+    <h2>Otros Servicios</h2>
+    <p>Además de nuestros productos industriales, ofrecemos:</p>
+    <ul style="max-width:800px; margin:auto; line-height:1.6;">
+      <li>Cursos y capacitaciones en trabajos de alto riesgo</li>
+      <li>Alquiler de maquinaria pesada y equipos industriales</li>
+      <li>Diseño y fabricación de piezas especiales</li>
+      <li>Soporte técnico para instalaciones y montajes</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Calle Alcides Vigo, Santiago de Surco, Lima, Perú</p>
+    <p><strong>Email:</strong> linosace@hotmail.com</p>
+    <p><strong>Teléfono:</strong> 942116070</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JLK DARE ME S.A.C. – Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
